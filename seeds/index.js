@@ -27,6 +27,7 @@ const seedDB = async () => {
     }
 }
 
+// コネクションを自動で閉じる
 seedDB().then(() => {
     mongoose.connection.close();
 });
