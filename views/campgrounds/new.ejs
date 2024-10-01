@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>キャンプ場の新規登録</title>
-</head>
-<body>
-    <form action="/campgrounds" method="post">
-        <div>
-            <label for="title">タイトル</label>
-            <input id="title" type="text" name="campground[title]">
-        </div>
-        <div>
-            <label for="location">場所</label>
-            <input id="location" type="text" name="campground[location]">
-        </div>
-        <button>登録する</button>
+<% layout('layouts/boilerplate') -%>
+<form action="/campgrounds" method="post">
+  <div>
+    <label for="title">タイトル</label>
+    <input id="title" type="text" name="campground[title]" />
+  </div>
+  <div>
+    <label for="location">場所</label>
+    <input id="location" type="text" name="campground[location]" />
+  </div>
+  <button>登録する</button>
 
-        <footer>
-            <a href="/campgrounds">一覧へ戻る</a>
-        </footer>
-    </form>
-</body>
-</html>
+  <footer>
+    <a href="/campgrounds">一覧へ戻る</a>
+  </footer>
+</form>
